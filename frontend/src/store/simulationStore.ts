@@ -20,7 +20,7 @@ interface SimulationStore {
   addManualRequest: (originFloor: number, destinationFloor: number) => void;
 }
 
-const WS_URL = 'ws://localhost:4000/ws';
+const WS_URL =import.meta.env.VITE_WS_URL || 'ws://localhost:4000/ws';
 
 export const useSimulationStore = create<SimulationStore>((set, get) => ({
   state: null,
