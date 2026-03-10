@@ -219,5 +219,11 @@ This ensures minimum unnecessary travel.
 - ✅ Real-time charts (wait time, travel time, utilization, throughput)
 - ✅ Speed control (1×, 2×, 5×)
 
+  ---
+  <img width="1915" height="936" alt="image" src="https://github.com/user-attachments/assets/09fb7280-a494-4fe6-ac8e-9c6226c79529" />
+  <img width="1897" height="874" alt="image" src="https://github.com/user-attachments/assets/23d37efd-4e9e-4f87-b34f-a2f093eae132" />
+
+
+
 
 
