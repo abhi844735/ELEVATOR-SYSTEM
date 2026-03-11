@@ -1,9 +1,9 @@
-import mongoose, { Schema, Document } from 'mongoose';
+import mongoose, { Schema } from 'mongoose';
 import { PassengerRequest, RequestStatus, RequestType } from '../types';
 
-export interface IRequestDocument extends PassengerRequest, Document {}
+export interface IRequest extends PassengerRequest {}
 
-const RequestSchema = new Schema<IRequestDocument>(
+const RequestSchema = new Schema<IRequest>(
   {
     id: { type: String, required: true, unique: true },
     originFloor: { type: Number, required: true },
@@ -39,4 +39,4 @@ RequestSchema.index({ status: 1 });
 RequestSchema.index({ requestedAt: 1 });
 RequestSchema.index({ elevatorId: 1 });
 
-export const RequestModel = mongoose.model<IRequestDocument>('Request', RequestSchema);
+export const RequestModel = mongoose.model<IRequest>('Request', RequestSchema);
