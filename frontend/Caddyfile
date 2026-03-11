@@ -1,0 +1,11 @@
+:{$PORT}
+
+# Serve the Vite build output
+root * /app/dist
+
+# SPA fallback (client-side routing)
+try_files {path} /index.html
+
+encode gzip
+file_server
+
